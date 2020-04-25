@@ -1,0 +1,19 @@
+{
+  "title": "artwork.text.v1",
+  "type": "object",
+  "description": "'text' artwork configuration",
+  "properties": {
+    "text": {
+      "type": "string"
+    },
+    "text-color": {
+      "$ref": "./color.v1.json"
+    },
+    "background-color": {
+      "$ref": "./color.v1.json"
+    }
+  },
+  "required": [
+    "text"
+  ]
+}

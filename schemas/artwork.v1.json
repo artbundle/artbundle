@@ -1,0 +1,50 @@
+{
+  "title": "artwork",
+  "type": "object",
+  "properties": {
+    "format": {
+      "type": "string",
+      "enum": [
+        "text",
+        "image",
+        "video",
+        "html"
+      ],
+      "description": "artwork format"
+    },
+    "orientation": {
+      "type": "string",
+      "enum": [
+        "horizontal",
+        "vertical",
+        "both"
+      ],
+      "description": "supported orientation"
+    },
+    "color": {
+      "$ref": "./color.v1.json"
+    },
+    "configuration": {
+      "oneOf": [
+        {
+          "$ref": "./artwork.text.v1.json"
+        },
+        {
+          "$ref": "./artwork.image.v1.json"
+        },
+        {
+          "$ref": "./artwork.html.v1.json"
+        },
+        {
+          "$ref": "./artwork.video.v1.json"
+        }
+      ],
+      "description": "configuration of the artwork, corresponding to the specified 'format'"
+    }
+  },
+  "required": [
+    "format",
+    "orientation",
+    "configuration"
+  ]
+}

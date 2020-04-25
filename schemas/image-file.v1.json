@@ -1,0 +1,38 @@
+{
+  "title": "image-file.v1",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "description": "relative to bundle root"
+        },
+        "width": {
+          "type": "number",
+          "description": "(at 1x)"
+        },
+        "height": {
+          "type": "number",
+          "description": "(at 1x)"
+        },
+        "type": {
+          "type": "string",
+          "description": "MIME type"
+        },
+        "density": {
+          "type": "string",
+          "default": "1x",
+          "description": "pixel density descriptor, followed by 'x' (e.g. \"2x\")"
+        }
+      },
+      "required": [
+        "path"
+      ]
+    },
+    {
+      "type": "string",
+      "description": "path to the file (relative to bundle root)"
+    }
+  ]
+}

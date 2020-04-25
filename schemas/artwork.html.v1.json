@@ -1,0 +1,11 @@
+{
+  "title": "artwork.html.v1",
+  "type": "object",
+  "description": "'html' artwork configuration",
+  "properties": {
+    "src": {
+      "type": "string",
+      "description": "path to HTML folder to serve"
+    }
+  }
+}

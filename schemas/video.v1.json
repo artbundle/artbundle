@@ -1,0 +1,14 @@
+{
+  "title": "video.v1",
+  "oneOf": [
+    {
+      "type": "array",
+      "items": {
+        "$ref": "./video-file.v1.json"
+      }
+    },
+    {
+      "$ref": "./video-file.v1.json"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "oneOf": [
+    {
+      "pattern": "^#([0-9]{3}|[0-9]{6})$",
+      "description": "hex (e.g. \"#E4E4E4\" or \"#0F0\")"
+    }
+  ],
+  "description": "",
+  "type": "string"
+}

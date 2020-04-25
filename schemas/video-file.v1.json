@@ -1,0 +1,33 @@
+{
+  "title": "video-file.v1",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "description": "relative to bundle root"
+        },
+        "width": {
+          "type": "number",
+          "description": ""
+        },
+        "height": {
+          "type": "number",
+          "description": ""
+        },
+        "type": {
+          "type": "string",
+          "description": "MIME type"
+        }
+      },
+      "required": [
+        "path"
+      ]
+    },
+    {
+      "type": "string",
+      "description": "path to the file (relative to bundle root)"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "title": "artbundle",
+  "type": "object",
+  "description": "",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Artwork title (to be kept short)"
+    },
+    "author": {
+      "type": "string",
+      "description": "Artwork author (to be kept short)"
+    },
+    "license": {
+      "type": "string",
+      "description": "Artwork license"
+    },
+    "date": {
+      "type": "string",
+      "description": "Artwork creation date",
+      "format": "date"
+    },
+    "description": {
+      "type": "string",
+      "description": "description of the artwork"
+    },
+    "attribution": {
+      "type": "string",
+      "description": "legal notices, copyrights…"
+    },
+    "preview": {
+      "$ref": "./image.v1.json"
+    },
+    "artwork": {
+      "type": "array",
+      "description": "List of artwork descriptions. The first supported one will be used.",
+      "items": {
+        "$ref": "./artwork.v1.json"
+      }
+    }
+  },
+  "required": [
+    "title",
+    "author",
+    "license",
+    "artwork"
+  ]
+}

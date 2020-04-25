@@ -1,0 +1,14 @@
+{
+  "title": "image.v1",
+  "oneOf": [
+    {
+      "type": "array",
+      "items": {
+        "$ref": "./image-file.v1.json"
+      }
+    },
+    {
+      "$ref": "./image-file.v1.json"
+    }
+  ]
+}

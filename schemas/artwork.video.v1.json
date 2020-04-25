@@ -1,0 +1,25 @@
+{
+  "title": "artwork.video.v1",
+  "type": "object",
+  "description": "'video' artwork configuration",
+  "properties": {
+    "video": {
+      "$ref": "./video.v1.json"
+    },
+    "mode": {
+      "type": "string",
+      "default": "cover",
+      "enum": [
+        "cover",
+        "contain",
+        "repeat"
+      ]
+    },
+    "background-color": {
+      "$ref": "./color.v1.json"
+    }
+  },
+  "required": [
+    "video"
+  ]
+}
